@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import inquirer from "inquirer";
-const convertion = {
+const convertion: { [key: string]: { [key: string]: number } } = {
   PKR: {
     USD: 1.25,
     EUR: 1.05,
@@ -17,6 +17,7 @@ const convertion = {
     INR: 0.011,
   },
 };
+
 const anwsers: {
   from: "USD" | "PKR" | "EUR";
   to: "USD" | "PKR" | "EUR";

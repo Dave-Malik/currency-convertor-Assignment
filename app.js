@@ -1,4 +1,4 @@
-// currency convertor using typescript
+#!/usr/bin/env node
 import inquirer from "inquirer";
 const convertion = {
     PKR: {

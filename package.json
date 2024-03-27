@@ -1,6 +1,6 @@
 {
-  "name": "@dave-malik/currency-convertor",
-  "version": "1.0.0",
+  "name": "@professor-dollar/currency-convertor",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "type": "module",
