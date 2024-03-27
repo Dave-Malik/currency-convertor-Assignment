@@ -1,4 +1,4 @@
-// currency convertor using typescript
+#!/usr/bin/env node
 import inquirer from "inquirer";
 const convertion = {
   PKR: {
@@ -42,9 +42,13 @@ const anwsers: {
 ]);
 const { from, to, amount } = anwsers;
 if (from && to && amount) {
-    console.log(from ,to)
-    let results = convertion[from][to] * amount;
-    console.log(`Your conversion was successful. If we convert ${amount} ${from} to ${to}, it will be ${results} ${to}`);
+  console.log(from, to);
+  let results = convertion[from][to] * amount;
+  console.log(
+    `Your conversion was successful. If we convert ${amount} ${from} to ${to}, it will be ${results} ${to}`
+  );
 } else {
-    console.log("An error has occurred. Please input valid values and try again.");
+  console.log(
+    "An error has occurred. Please input valid values and try again."
+  );
 }
